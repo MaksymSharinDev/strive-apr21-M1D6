@@ -172,10 +172,16 @@
               3x3rc15e_10
             </button>
             <button class="btn " type=" button" title="exercise_11" onclick="
+            let imagesArray = document.getElementsByTagName('img')
+            for (let i = 0; i < imagesArray.length ; i++ ) imagesArray[i].style.opacity = '0.5' 
+            setTimeout(() => {
+              for (let i = 0; i < imagesArray.length ; i++ ) imagesArray[i].style.opacity = '1' }  
+              , 5000)
             ">
               3x3rc15e_11
             </button>
             <button class="btn " type=" button" title="exercise_12" onclick="
+            
             ">
               3x3rc15e_12
             </button>
