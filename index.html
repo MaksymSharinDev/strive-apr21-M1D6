@@ -79,6 +79,7 @@
       background-color: white;
     }
   </style>
+  <script type="text/javascript" src="leet.js"></script>
 </head>
 
 
@@ -158,6 +159,10 @@
             </button>
 
             <button class="btn " type=" button" title="exercise_9" onclick="
+            let footerEmail = document.getElementById('footer-email')
+            let original = footerEmail.innerText
+            footerEmail.innerText = leet.convert( footerEmail.innerText )
+            setTimeout(() => footerEmail.innerText = original , 10000)
             ">
               3x3rc15e_9
             </button>
@@ -311,7 +316,7 @@
   align-items: center;
   justify-content: center;">
     <p>SnippetShop <br> </p>
-    <p>info@SnippetShop.com <br></p>
+    <p id="footer-email">info@SnippetShop.com <br></p>
   </footer>
 </body>
 
