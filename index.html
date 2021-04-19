@@ -106,7 +106,7 @@
             <p class="card-text">
               EX3.: Insert for each product an image, a title, a description and a price
             </p>
-            <p class="card-text">EX4.: Add links to existing Amazon products for each item in the table</p>
+            <p class="card-text">EX4.: Add links to existing <del>Amazon products</del> <b>JFiddle snippets</b> for each item in the table</p>
             <p class="card-text">EX5.: Add a footer with the address and the name of your shop</p>
             <p class="card-text">
               EX6.: Add a message board where the user can type a message in it (no real
@@ -168,6 +168,9 @@
             </button>
 
             <button class="btn " type=" button" title="exercise_10" onclick="
+            let linkTargets = document.getElementsByClassName('linkTarget')
+            for(let i=0; i< linkTargets.length; i++) linkTargets[i].removeAttribute('hidden')
+            setTimeout( () =>{ for (let i=0; i< linkTargets.length; i++) linkTargets[i].setAttribute('hidden', true) }, 5000 )
             ">
               3x3rc15e_10
             </button>
@@ -192,8 +195,50 @@
             ">
               3x3rc15e_12
             </button>
-           
+
+            
           </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <form
+            class="contact-form d-flex flex-column align-items-center"
+            style="width: 100%;"
+            >
+            <div class="form-group w-75">
+              <input
+                type="name"
+                class="form-control"
+                placeholder="Name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="form-group w-75">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                name="name"
+                required
+              />
+            </div>
+
+            <div class="form-group w-75">
+              <textarea
+                class="form-control"
+                type="text"
+                placeholder="Message"
+                rows="7"
+                name="name"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-submit btn-info w-75">Submit</button>
+          </form>
+          </div>
+          <div class="col-9"></div>
+          
         </div>
       </div>
 
@@ -209,6 +254,7 @@
               <th>title</th>
               <th>description</th>
               <th>price</th>
+              <th hidden class="linkTarget" > links </th>
             </tr>
             <tr>
               <td><img src="assets/items/a.gif" alt="exercise" width="175" height="175"></td>
@@ -232,6 +278,7 @@
               </code>
               </td>
               <td class="priceTag"> 10 BTC :P </td>
+              <td hidden class="linkTarget"> <a href="https://jsfiddle.net/MaksymSharin/6gpvnoxm/1/">jsFiddle</a></td>
             </tr>
             <tr>
               <td><img src="assets/items/b.gif" alt="exercise" width="175" height="175"></td>
@@ -250,6 +297,7 @@
               </code>
               </td>
               <td class="priceTag" >2 cows</td>
+              <td hidden class="linkTarget"> <a href="https://jsfiddle.net/MaksymSharin/6gpvnoxm/3/">jsFiddle</a> </td>
             </tr>
             <tr>
               <td><img src="assets/items/c.gif" alt="exercise" width="175" height="175"></td>
@@ -272,6 +320,7 @@
               </code>
               </td>
               <td class="priceTag" >A diamond block :D</td>
+              <td hidden class="linkTarget"> <a href="https://jsfiddle.net/MaksymSharin/6gpvnoxm/7/">jsFiddle</a> </td>
             </tr>
             <tr>
               <td><img src="assets/items/d.gif" alt="exercise" width="175" height="175"></td>
@@ -290,6 +339,7 @@
             </code>
               </td>
               <td class="priceTag">300 T-34</td>
+              <td hidden class="linkTarget"> <a href="https://jsfiddle.net/MaksymSharin/6gpvnoxm/8/">jsFiddle</a></td>
             </tr>
             <tr>
               <td><img src="assets/items/e.gif" alt="exercise" width="175" height="175"></td>
@@ -314,6 +364,7 @@
               </code>
               </td>
               <td class="priceTag">1 soul</td>
+              <td hidden class="linkTarget"> <a href="https://jsfiddle.net/MaksymSharin/6gpvnoxm/10/">jsFiddle</a></td>
             </tr>
           </table>
         </div>
