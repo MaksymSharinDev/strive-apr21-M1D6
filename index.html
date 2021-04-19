@@ -1,14 +1,11 @@
 <html>
 
-
-
-
-
-
 <head>
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
   <style>
     @font-face {
       font-family: "Hacked";
@@ -22,7 +19,6 @@
     }
 
     body>* {
-
       font-size: 30;
       text-shadow:
         -1px -1px 0 white,
@@ -30,9 +26,11 @@
         -1px 1px 0 white,
         1px 1px 0 white;
     }
-    footer > * {
+
+    footer>* {
       margin: 25px
     }
+
     table {
       font-size: 25;
       text-align: left;
@@ -83,74 +81,116 @@
   </style>
 </head>
 
+
 <body style="font-family: Hacked;">
-  <button class="btn " type=" button" title="Click to show/hide homework description" onclick="
-  (document.getElementById('spoiler').style.display=='none') ?
-     document.getElementById('spoiler').style.display='' :
-       document.getElementById('spoiler').style.display='none' ">
-    Show/hide D6 homework
-  </button>
-  <div id="spoiler" class="card toSlide" style="display:none ">
-    <div class="card-body">
-      <p class="card-text">
-        You have been assigned to the creation of a Smartphone Shop Website. The
-        homepage you're about to write is just a showcase of the products of the
-        shop with some extra information. No shopping cart / checkout features are
-        required.
-      </p>
-
-      <p class="card-text">Complete exercises from 1 to 6 with just plain HTML.</p>
-
-      <p class="card-text">EX1.: Add an h1 tag with the name of your shop</p>
-      <p class="card-text">EX2.: Add a TABLE with the top 5 products of your shop</p>
-      <p class="card-text">
-        EX3.: Insert for each product an image, a title, a description and a price
-      </p>
-      <p class="card-text">EX4.: Add links to existing Amazon products for each item in the table</p>
-      <p class="card-text">EX5.: Add a footer with the address and the name of your shop</p>
-      <p class="card-text">
-        EX6.: Add a message board where the user can type a message in it (no real
-        posting/saving features required!)
-      </p>
-
-      <p class="card-text">EXTRA (use JavaScript code here)</p>
-
-      <p class="card-text">EX7.: Write a function to change the h1 text</p>
-      <p class="card-text">EX8.: Write a function to change the page background color</p>
-      <p class="card-text">EX9.: Write a function to change the footer address with a fake one</p>
-      <p class="card-text">EX10.: Write a function to add a CSS class to every Amazon link</p>
-      <p class="card-text">
-        EX11: Write a function to toggle a CSS class for all the images in the
-        table; that class should set the visibility of the image
-      </p>
-      <p class="card-text">
-        EX12: Write a function to color the price of each product in a different one
-        every time it's invoked
-      </p>
-    </div>
-  </div>
-
   <div class="container" style=" max-width: 100%;">
     <div class="row">
       <div class="col-2">
         <img src="assets/potrait.gif" alt="Maksym Sharin" style="position: fixed; ">
       </div>
       <div class="col-10">
-        <h1>
-          SnippetShop
-        </h1>
-        <table class="table">
-          <tr>
-            <th>image</th>
-            <th>title</th>
-            <th>description</th>
-            <th>price</th>
-          </tr>
-          <tr>
-            <td><img src="assets/items/a.gif" alt="exercise" width="175" height="175"></td>
-            <td> Day 5, <br>Exercise 9 </td>
-            <td>
-              <code class="prettyprint">
+        <div id="spoiler" class="card toSlide" style="display:none; top:150px">
+          <div class="card-body">
+            <p class="card-text">
+              You have been assigned to the creation of a Smartphone Shop Website. The
+              homepage you're about to write is just a showcase of the products of the
+              shop with some extra information. No shopping cart / checkout features are
+              required.
+            </p>
+
+            <p class="card-text">Complete exercises from 1 to 6 with just plain HTML.</p>
+
+            <p class="card-text">EX1.: Add an h1 tag with the name of your shop</p>
+            <p class="card-text">EX2.: Add a TABLE with the top 5 products of your shop</p>
+            <p class="card-text">
+              EX3.: Insert for each product an image, a title, a description and a price
+            </p>
+            <p class="card-text">EX4.: Add links to existing Amazon products for each item in the table</p>
+            <p class="card-text">EX5.: Add a footer with the address and the name of your shop</p>
+            <p class="card-text">
+              EX6.: Add a message board where the user can type a message in it (no real
+              posting/saving features required!)
+            </p>
+
+            <p class="card-text">EXTRA (use JavaScript code here)</p>
+
+            <p class="card-text">EX7.: Write a function to change the h1 text</p>
+            <p class="card-text">EX8.: Write a function to change the page background color</p>
+            <p class="card-text">EX9.: Write a function to change the footer address with a fake one</p>
+            <p class="card-text">EX10.: Write a function to add a CSS class to every Amazon link</p>
+            <p class="card-text">
+              EX11: Write a function to toggle a CSS class for all the images in the
+              table; that class should set the visibility of the image
+            </p>
+            <p class="card-text">
+              EX12: Write a function to color the price of each product in a different one
+              every time it's invoked
+            </p>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <button class="btn " type=" button" title="Click to show/hide homework description" onclick="
+          (document.getElementById('spoiler').style.display=='none') ?
+             document.getElementById('spoiler').style.display='' :
+               document.getElementById('spoiler').style.display='none' ">
+              Show/hide D6 homework
+            </button>
+          </div>
+          <div class="col-9">
+
+
+            <button class="btn " type=" button" title="exercise_7" onclick="
+            ">
+              3x3rc15e_7
+            </button>
+
+            <button class="btn " type=" button" title="exercise_8" onclick="
+            ">
+              3x3rc15e_8
+            </button>
+
+            <button class="btn " type=" button" title="exercise_9" onclick="
+            ">
+              3x3rc15e_9
+            </button>
+
+            <button class="btn " type=" button" title="exercise_10" onclick="
+            ">
+              3x3rc15e_10
+            </button>
+            <button class="btn " type=" button" title="exercise_11" onclick="
+            ">
+              3x3rc15e_11
+            </button>
+            <button class="btn " type=" button" title="exercise_12" onclick="
+            ">
+              3x3rc15e_12
+            </button>
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-10">
+          <h1>
+            SnippetShop
+          </h1>
+          <table class="table">
+            <tr>
+              <th>image</th>
+              <th>title</th>
+              <th>description</th>
+              <th>price</th>
+            </tr>
+            <tr>
+              <td><img src="assets/items/a.gif" alt="exercise" width="175" height="175"></td>
+              <td> Day 5, <br>Exercise 9 </td>
+              <td>
+                <code class="prettyprint">
                 const printEx = (id) => console.log(`\n\nExercise ${id}: \n`) 
       
                 <br>  ;(function(){
@@ -166,15 +206,15 @@
                 <br>  `result: ${howManyDays( "aString" )}\n`) 
                 <br>})()
               </code>
-            </td>
-            <td> 10 BTC :P </td>
-          </tr>
-          <tr>
-            <td><img src="assets/items/b.gif" alt="exercise" width="175" height="175"></td>
-            </td>
-            <td>Day 5, <br>Exercise 17</td>
-            <td>
-              <code class="prettyprint">
+              </td>
+              <td> 10 BTC :P </td>
+            </tr>
+            <tr>
+              <td><img src="assets/items/b.gif" alt="exercise" width="175" height="175"></td>
+              </td>
+              <td>Day 5, <br>Exercise 17</td>
+              <td>
+                <code class="prettyprint">
                     ;(function(moviesArray){
                 <br>  printEx("17")
                 <br>  const sumAllTheYears = () => 
@@ -184,15 +224,15 @@
                 <br>  console.log(`sumAllTheYears output:  \n ${sumAllTheYears()}`)
                 <br>})(movies)
               </code>
-            </td>
-            <td>2 cows</td>
-          </tr>
-          <tr>
-            <td><img src="assets/items/c.gif" alt="exercise" width="175" height="175"></td>
-            </td>
-            <td>Day 5, </td>
-            <td>
-              <code class="prettyprint">
+              </td>
+              <td>2 cows</td>
+            </tr>
+            <tr>
+              <td><img src="assets/items/c.gif" alt="exercise" width="175" height="175"></td>
+              </td>
+              <td>Day 5, <br>Exercise 19</td>
+              <td>
+                <code class="prettyprint">
                   ;(function(moviesArray){
               <br>printEx("19")
               <br>  const searchAndDivide = (str) =>  { 
@@ -206,27 +246,56 @@
               <br>    console.log( `result for "Avengers" ${searchAndDivide("Avengers")}` )
               <br>})(movies)
               </code>
-            </td>
-            <td>A diamond block :D</td>
-          </tr>
-          <tr>
-            <td><img src="assets/items/d.gif" alt="exercise" width="175" height="175"></td>
-            </td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><img src="assets/items/e.gif" alt="exercise" width="175" height="175"></td>
-            </td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
-
+              </td>
+              <td>A diamond block :D</td>
+            </tr>
+            <tr>
+              <td><img src="assets/items/d.gif" alt="exercise" width="175" height="175"></td>
+              </td>
+              <td>Day 5,<br>Exercise 20</td>
+              <td>
+                <code class="prettyprint">
+                  ;(function(moviesArray){
+              <br>  printEx("20")
+              <br>  const removeIndex = (index) => { moviesArray.splice(index, 1); return moviesArray } 
+              <br>  console.log( `delete of `+
+              <br>  "The Lord of the Rings: The Fellowship of the Ring"+
+              <br>  `" ${JSON.stringify( removeIndex(0) ).replace(/,/g,",\n") }` )
+              <br>  
+              <br>})(movies)
+            </code>
+              </td>
+              <td>300 T-34</td>
+            </tr>
+            <tr>
+              <td><img src="assets/items/e.gif" alt="exercise" width="175" height="175"></td>
+              </td>
+              <td>Day 5,<br>Exercise 21</td>
+              <td>
+                <code class="prettyprint">
+                ;(function(){
+                <br>  printEx("21")
+                <br>  const halfTree = (n) => {
+                <br>    let strAcc = ""
+                <br>    for( let i in [...Array(n).keys()] ) {
+                <br>      strAcc += "*"
+                <br>      console.log( strAcc  )
+                <br>    }
+                <br>  }
+                <br>  console.log(`test 3: \n`);
+                <br>  halfTree(3)
+                <br>  console.log(`test 5: \n`);
+                <br>  halfTree(5)
+                <br>})()
+              </code>
+              </td>
+              <td>1 soul</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
+  </div>
   </div>
 
 
