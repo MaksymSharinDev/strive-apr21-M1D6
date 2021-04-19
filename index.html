@@ -181,7 +181,14 @@
               3x3rc15e_11
             </button>
             <button class="btn " type=" button" title="exercise_12" onclick="
-            
+            let pricetagsArray = document.getElementsByClassName('pricetag')
+            for (let i = 0; i < pricetagsArray.length ; i++ ){
+              let randomColor = Math.floor(Math.random()*16777215).toString(16);
+              pricetagsArray[i].style.color = randomColor
+            }
+            setTimeout(() => {
+              for (let i = 0; i < pricetagsArray.length ; i++ ) pricetagsArray[i].style.color = 'black' }  
+              , 5000)
             ">
               3x3rc15e_12
             </button>
@@ -224,7 +231,7 @@
                 <br>})()
               </code>
               </td>
-              <td> 10 BTC :P </td>
+              <td class="priceTag"> 10 BTC :P </td>
             </tr>
             <tr>
               <td><img src="assets/items/b.gif" alt="exercise" width="175" height="175"></td>
@@ -242,7 +249,7 @@
                 <br>})(movies)
               </code>
               </td>
-              <td>2 cows</td>
+              <td class="priceTag" >2 cows</td>
             </tr>
             <tr>
               <td><img src="assets/items/c.gif" alt="exercise" width="175" height="175"></td>
@@ -264,7 +271,7 @@
               <br>})(movies)
               </code>
               </td>
-              <td>A diamond block :D</td>
+              <td class="priceTag" >A diamond block :D</td>
             </tr>
             <tr>
               <td><img src="assets/items/d.gif" alt="exercise" width="175" height="175"></td>
@@ -282,7 +289,7 @@
               <br>})(movies)
             </code>
               </td>
-              <td>300 T-34</td>
+              <td class="priceTag">300 T-34</td>
             </tr>
             <tr>
               <td><img src="assets/items/e.gif" alt="exercise" width="175" height="175"></td>
@@ -306,7 +313,7 @@
                 <br>})()
               </code>
               </td>
-              <td>1 soul</td>
+              <td class="priceTag">1 soul</td>
             </tr>
           </table>
         </div>
